@@ -1,0 +1,96 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.env
+*.local
+*.local.*
+# Allow the sample-project denylist canary fixture (synthetic, no real credentials).
+!sample-project/.env.fake
+
+# API keys, credentials, certificates, and private material
+secrets.*
+*secret*
+*secrets*
+*credential*
+*credentials*
+*private*
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtual environments and dependency caches
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+
+# .NET
+**/[Bb]in/
+**/[Oo]bj/
+.vs/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+*.nupkg
+*.snupkg
+
+# .NET publish/release artifacts
+artifacts/
+publish/
+releases/
+*.deps.json
+*.runtimeconfig.json
+*.pdb
+
+# Local output and generated worker artifacts
+tmp/
+temp/
+output/
+outputs/
+dist/
+build/
+*.generated.*
+*.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archives and binary packages
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.7z
+*.rar
+
+# Prevent accidentally committing a nested local checkout/copy.
+/ai-worker-bash/
+
+# Git worktrees
+.worktrees/

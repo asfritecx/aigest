@@ -1,0 +1,6 @@
+<Project>
+  <!-- SourceLink via GitHub for debugging symbols -->
+  <ItemGroup Condition="'$(IsPackable)' != 'false'">
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

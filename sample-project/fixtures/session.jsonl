@@ -1,0 +1,4 @@
+{"role":"user","content":"Walk me through the InventoryService reservation flow.","timestamp":"2026-04-12T09:00:00Z"}
+{"role":"assistant","content":"InventoryService.Reserve checks stock at InventoryService.cs:42, decrements the count, and returns a ReservationResult. The HTTP entrypoint is InventoryRoutes.cs:18.","timestamp":"2026-04-12T09:00:04Z"}
+{"role":"user","content":"What happens when stock is zero?","timestamp":"2026-04-12T09:00:21Z"}
+{"role":"assistant","content":"Reserve returns ReservationResult.OutOfStock without decrementing. Caller is expected to map that to HTTP 409. See InventoryService.cs:55.","timestamp":"2026-04-12T09:00:25Z"}

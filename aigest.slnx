@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Aigest.Cli/Aigest.Cli.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Aigest.Cli.Tests/Aigest.Cli.Tests.csproj" />
+  </Folder>
+</Solution>
